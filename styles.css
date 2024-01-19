@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.TopMarquee{
+    background-color: brown;
+    font-size: 1.6em;
+}
+
+.LogoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LogoDiv img{
+    width: 100%; /* Make the logo responsive */
+    max-width: 200px; /* Limit the maximum width */    
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.MenuDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.MenuDiv a{
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: red;
+}
+
+.MenuDiv a:hover{
+    color: blue;
+}
+
+.WholeContainer hr{
+    margin-top: 10px;
+    height: 3px;
+    box-shadow: 2px 1px 1px 1px;
+}
+
+.carousel-container {
+    width:100%;
+    overflow: hidden;
+}
+
+.carousel {
+    margin-top: 30px;
+    display: flex;
+    width: 50%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 50%;
+    object-fit:cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 45%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.SalesDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.SalesDiv img{
+    width: 100%; /* Make the images responsive */
+    max-width: 300px; /* Limit the maximum width */
+    padding: 40px;
+    border-radius: 50px;
+}
+
+.ThoseFour{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ThatOne,
+.ThatTwo,
+.ThatThree,
+.ThatFour,
+.ThatFive {
+    padding: 40px; /* Adjust padding for smaller screens */
+}
+
+.WeKnow {
+    display: flex;
+    flex-direction: row; /* Adjust for smaller screens */
+    align-items: center;
+    justify-content: center;
+}
+
+.WeKnow div img {
+    width: 100%; /* Make the images responsive */
+    max-width: 200px; /* Limit the maximum width */
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.WeKnow div button {
+    padding: 15px;
+    margin-top: 10px; 
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+}
+
+.WeKnow div button:hover{
+    background-color: white;
+    color: black;
+    border: 1.5px solid black;
+}
+
+.CallIfAnyQuery {
+    margin-top: 20px; /* Adjust margin for smaller screens */
+    background-color: aqua;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center; /* Center text for smaller screens */
+    list-style-type: none;
+}
+
+.column img {
+    width: 100%; /* Make the images responsive */
+    max-width: 250px; /* Limit the maximum width */
+    cursor: pointer;
+}
+
+.column img{
+    width: 200px;
+    cursor: pointer;
+    padding: 10px;
+}
+.column li,
+.column p {
+    padding: 10px; /* Adjust padding for smaller screens */
+}
+
+.column li:hover,
+.column p:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.SocialIcons i {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .SalesDiv,
+    .WeKnow div,
+    .CallIfAnyQuery,
+    .container {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Additional media queries for smaller screens if needed */
+
+@media screen and (max-width: 480px) {
+    .TopMarquee {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    .MenuDiv {
+        flex-direction: column; /* Stack menu items in a column for smaller screens */
+    }
+
+    .MenuDiv a {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .carousel img {
+        width: 100%; /* Make the images responsive */
+    }
+
+    .SalesDiv img {
+        max-width: 100%; /* Make the images responsive */
+    }
+
+    .WeKnow div img {
+        max-width: 100%; /* Make the images responsive */
+    }
+
+    .container {
+        flex-direction: column; /* Stack columns in a column for smaller screens */
+    }
+
+    .column img {
+        max-width: 100%; /* Make the images responsive */
+    }
+}
+@media screen and (max-width: 320px){
+    .TopMarquee{
+        width: 100px;
+        height: 1.5em;
+    }
+
+    .MenuDiv{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel{
+        height: 200px;
+        width: 300px;
+    }
+    .carousel-container button{
+        margin-top: 300px;
+    }
+
+    .SalesDiv{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ThoseFour{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: auto;
+    }
+
+    .WeKnow{
+        display: flex;
+        flex-direction: column;
+    }
+    .WeKnow div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 33px;
+    }
+
+    .CallIfAnyQuery{
+        width: 400px;
+        height: 3.8em;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .column{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .TopMarquee {
+        width: 400px;
+        height: 1.5em;
+    }
+
+    .MenuDiv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel {
+        height: 200px;
+        width: 300px;
+    }
+
+    .carousel-container button {
+        margin-top: 307px;
+    }
+
+    .SalesDiv,
+    .ThoseFour,
+    .WeKnow div {
+        flex-direction: column;
+        align-items: center;
+        padding: auto;
+    }
+
+    .WeKnow div {
+        margin-bottom: 20px;
+    }
+
+    .WeKnow div button{
+        position: relative;
+        left: 0;
+    }
+
+    .CallIfAnyQuery {
+        width: 400px;
+        height: 3.8em;
+    }
+
+    .container,
+    .container .column {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .column img {
+        width: 150px;
+        cursor: pointer;
+        padding: 10px;
+    }
+}
+
+    
